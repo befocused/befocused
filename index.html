@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Be Focused | AI Powered solution for Real Estate Agents</title>
+  <link rel="icon" type="image/png" href="images/fav.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<style>
+
+.quotes {display: none;}
+
+</style>
+
+<body>
+
+<header class="header">
+  <div id="headerInner">
+    <div class="container-fluid">
+      <nav class="navbar navbar-default">
+        <div class="col-xs-12 col-md-offset-1 col-md-10">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.svg"/>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section id="wrapper">
+  <div class="row">
+    <div class="slide-1 col-xs-12 col-md-offset-1 col-md-10">
+      <div class="row table-display">
+        <div class="description table-cell col-xs-12 col-md-10">
+          <h1 class="quotes">Are you focusing on what really matters?</h1>
+          <h1 class="quotes">AI helps real estate agents to be mobile</h1>
+          <h1 class="quotes">Be focused!</h1>
+          <h1 class="quotes">A little less conversation,<br>a little more action!</h1>
+          <p>
+            Everything is happening now. Instant publication is the must today. Machine learning algorithms show content that matters most. In the world of noise meaningful feedback is highly valuable.
+            <a class="learn-more" href="https://www.facebook.com" target="_blank">Learn more<span class="hidden-xs"> on Facebook</span></a>
+          </p>
+          <div class="subscribers">
+            <img src="images/profile-pics.png"/>
+            <p>370 agents already interested</p>
+          </div>
+        </div>
+        <div class="table-cell col-xs-12 col-md-offset-1 col-md-4">
+          <form id="contactForm" action="#"
+                method="post" target="_blank">
+            <input type="text" name="First name" placeholder="First name" required/>
+            <input type="text" name="Last name" placeholder="Last name" required/>
+            <input type="text" name="Location" placeholder="Your location" required/>
+            <input type="email" name="Email" placeholder="Email address" required/>
+            <button type="submit" class="befocused-btn">Add me to the waiting list</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,600" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+
+(function() {
+
+    var quotes = $(".quotes");
+    var quoteIndex = -1;
+
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(2000)
+            .delay(1000)
+            .fadeOut(2000, showNextQuote);
+    }
+
+    showNextQuote();
+
+})();
+
+</script>
+
+</body>
+</html>

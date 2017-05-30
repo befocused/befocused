@@ -85,17 +85,17 @@ a.learn-more {
     max-width: calc(100% - 156px - 35px);
 }
 
-#contactForm {
+#befocusedContactForm {
     text-align: center;
 }
 
-#contactForm .cloud-btn {
+#befocusedContactForm .cloud-btn {
     margin: 60px auto 40px;
     padding: 15px 60px;
 }
 
-#contactForm input[type=text],
-#contactForm input[type=email] {
+#befocusedContactForm input[type=text],
+#befocusedContactForm input[type=email] {
     background: #FFFFFF;
     box-sizing: border-box;
     width: 100%;
@@ -116,8 +116,8 @@ a.learn-more {
     color: #4F4F4F;
 }
 
-#contactForm input[type=text]::placeholder,
-#contactForm input[type=email]::placeholder {
+#befocusedContactForm input[type=text]::placeholder,
+#befocusedContactForm input[type=email]::placeholder {
     color: rgba(0, 0, 0, .5);
 }
 
